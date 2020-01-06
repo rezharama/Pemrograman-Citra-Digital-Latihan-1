@@ -1,0 +1,8 @@
+function cameraman
+
+citra1=imread('cameraman.tif');
+citra2=imrotate(citra1,90);
+iflip=flip(citra2,1);
+
+subplot(1,2,1), imshow(citra1);
+subplot(1,2,2), imshow(iflip);
